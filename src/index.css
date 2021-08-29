@@ -29,6 +29,8 @@ main {
 }
 
 section {
+  display: flex;
+  justify-content: center;
   padding: 1rem;
 }
 
@@ -96,22 +98,22 @@ section {
 }
 
 .popup {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
   background-color: #445565;
   overflow-y: scrool;
 }
 
 .popup .content {
   display: block;
-  width: 100%;
-  max-width: 60rem;
+  max-width: 100%;
   margin: 0 auto;
   padding: 1.5rem;
   color: #FFF;
+  background-color: #445565;
+
 }
 
 .popup .content h2 {
@@ -145,10 +147,14 @@ section {
   padding: 1rem;
   text-align: justify;
 }
+.popup .content .more-infos p {
+  flex: 1 1 50%;
+  text-align: justify;
+}
 
 .popup .content .close {
   display: inline-block;
-  margin: 2rem 0;
+  margin-top: 1rem;
   padding: 1rem 2rem;
   font-size: 1.1rem;
   font-weight: 700;
