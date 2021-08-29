@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "montserrat", sans-serif;
+  background-color: #223343;
+}
+
+header {
+  padding: 3rem 1rem 0;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  max-width: 60rem;
+  margin: 0 auto;
+  font-size: 2rem;
+  color: #fff;
+}
+
+section {
+  padding: 1rem;
+}
+
+.searchbox {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  background: none;
+  background-color: #eee;
+  border-radius: 0.5rem;
+  color: #53565a;
+  font-size: 1.3rem;
+  font-weight: 300;
+  transition: 0.4s ease-out;
+}
+
+.searchbox:focus {
+  box-shadow: 0px 0px 8px 3px #4484c4;
+}
+
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+  text-align: center;
+}
+
+.results .result {
+  width: 33.33%;
+  min-width: 15.62rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.noresults {
+  width: 100%;
+  max-width: 60rem;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  color: #fff;
+  text-align: center;
+}
+
+.results img {
+  display: block;
+  width: 100%;
+}
+
+.results .result h3 {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 0.8rem;
+  background: #445565;
+  flex: 1 1 100%;
+  transition: 0.4s ease-out;
+}
+
+.results .result:hover h3 {
+  background-color: #fff;
+  color: #223343;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #445565;
+  overflow-y: scrool;
+}
+
+.popup .content {
+  display: block;
+  width: 100%;
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+  color: #FFF;
+}
+
+.popup .content h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.popup .content h2 span {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.popup .content .rating {
+  margin-bottom: 1.8rem;
+}
+
+.popup .content .plot {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem 2rem;
+}
+
+.popup .content .plot img {
+  flex: 1 1 50%;
+  max-width: 18.75rem;
+  padding: 0 1rem;
+}
+
+.popup .content .plot p {
+  flex: 1 1 50%;
+  padding: 1rem;
+  text-align: justify;
+}
+
+.popup .content .close {
+  display: inline-block;
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background-color: #44C484;
+  color: #223343;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+}
+
+.popup .content .close:hover {
+  background: #223343;
+}
